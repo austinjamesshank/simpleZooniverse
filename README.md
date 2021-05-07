@@ -1,6 +1,8 @@
 # simpleZooniverse
 Simplifying the Zooniverse Panoptes API functions for wider public use.
 
+https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI
+
 To use this repo with Google Colab, follow the steps below:
 1. Go to this link: https://drive.google.com/file/d/18lzHK9njUxmhF9xt5jITV87mxpSDFATi/view?usp=sharing
 2. Click "Open with Google Colaboratory" at the top of the page.
