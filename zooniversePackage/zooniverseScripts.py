@@ -169,14 +169,12 @@ def createZooniverseProject(projName, projDesc, primLang, flag_hidden):
             print(type(e))
             print(e)
             if str(e) == 'Validation failed: Display name Must be unique for owner':
-                print('!!! {}'.format(e))
+                print('!!! {}. Trying a duplicate name.'.format(e))
                 projName = ogName + ' {}'.format(copyNum)
                 copyNum += 1
-                print('!!! Trying a duplicate name: "{}"'.format(projName))
             else:
                 print('!!! {} , Waiting 5 seconds...'.format(e))
                 for i in range(0, 5):
-                    print('... Waiting {}...'.format(i))
                     time.sleep(1)
                 project.delete()
                 saveCheck += 1
@@ -428,8 +426,7 @@ def makeZooniverseProject(args, customArgs, tutorial=False):
     
 def pushNewSubjectSet(args, customArgs, projID):
     
-    connection = panoptesConnect(args['username'], args['password'])
-    args['zooniverseConnection'] = connection
+    #connection = panoptesConnect(args['username'], args['password'])
 
     #Get existing project
     project = Project(projID)
@@ -454,16 +451,20 @@ def pushSubjectFile(f, fPath, args):
     
     fullPath = fPath[:fPath.rfind('/')]
     extension = f.split('.')[-1]
+    #print(f)
+    #print(fPath)
+    #print(fullPath)
     print('File is {}'.format(extension))
-    if extension == '.aus':
+    if extension == 'aus':
         items = Table.read(fPath, format='ascii.tab')
         for item in items:
             imageLocations = ast.literal_eval(item['imageLocations'])
             metadata = json.loads(item['metadata'])
             #print(len(imageLocations))
             pushSubject(args['subjectSet'], args['project'], imageLocations, metadata, args['F_livePost'])
-    elif extension == '.csv':
+    elif extension == 'csv':
         items = Table.read(fPath)
+        print('Pushing subjects from {}'.format(f))
         for item in items:
             imageLocations = []
             metadata = {}
@@ -501,6 +502,7 @@ def inputData(username=None, password=None, makeImages=False, projID=-1, project
     args['username'] = username
     args['password'] = password
     args['projectName'] = projectName
+    args['zooniverseConnection'] = connection
     
     if dsLocations == None:
         pass
@@ -537,9 +539,6 @@ def inputData(username=None, password=None, makeImages=False, projID=-1, project
         else:
             # User does not have project.
             pass
-    
-    if projID == -1:
-        makeZooniverseProject(args, customArgs, tutorial)
 
 def parseOutput(f):
 
