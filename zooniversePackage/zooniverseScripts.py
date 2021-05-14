@@ -420,7 +420,9 @@ def makeZooniverseProject(args, customArgs, tutorial=False):
         args['subjectSet'] = None       
 
     #Push images and metadata
-    pushSubjectFile(f, fPath, args)
+    for fPath in args['datasetLocations']:
+        f = fPath.split('/')[-1]
+        pushSubjectFile(f, fPath, args)
 
     return args
     
@@ -450,17 +452,18 @@ def pushNewSubjectSet(args, customArgs, projID):
 
 def pushSubjectFile(f, fPath, args):
     
-    extension = os.path.splitext(f)[1]
+    fullPath = fPath[:fPath.rfind('/')]
+    extension = f.split('.')[-1]
     print('File is {}'.format(extension))
     if extension == '.aus':
-        items = Table.read(f, format='ascii.tab')
+        items = Table.read(fPath, format='ascii.tab')
         for item in items:
             imageLocations = ast.literal_eval(item['imageLocations'])
             metadata = json.loads(item['metadata'])
             #print(len(imageLocations))
             pushSubject(args['subjectSet'], args['project'], imageLocations, metadata, args['F_livePost'])
     elif extension == '.csv':
-        items = Table.read(f)
+        items = Table.read(fPath)
         for item in items:
             imageLocations = []
             metadata = {}
@@ -469,7 +472,7 @@ def pushSubjectFile(f, fPath, args):
                 if os.path.splitext(col)[1].lower() in ['.png', '.jpg', '.jpeg', '.tiff', '.bmp', '.gif']:
                     imgExt = os.path.splitext(col)[1]
                     #print(imgExt)
-                    imageLocations.append(col)
+                    imageLocations.append(fullPath + '/' + col)
                 else:
                     metadata[items.colnames[i]] = col
             #print(imageLocations)
@@ -489,9 +492,11 @@ def printSubjectInfo(imgs, metadata, dest, lock):
         
 # --- --- --- --- --- --- --- ---
      
-def inputData(username=None, password=None, makeImages=False, projID=-1, projectName='Simple Zooniverse Project', dsLocations=None, customArgs={}, verbose=False, tutorial=False, coreCount = multiprocessing.cpu_count()):
+def inputData(username=None, password=None, makeImages=False, projID=-1, projectName='Simple Zooniverse Project', dsLocations=None, customArgs={}, verbose=False, tutorial=False, coreCount=multiprocessing.cpu_count()):
     
     args = {}
+    
+    connection, username, password = panoptesConnect(username, password)
     
     args['username'] = username
     args['password'] = password
@@ -514,8 +519,7 @@ def inputData(username=None, password=None, makeImages=False, projID=-1, project
     args['coreCount'] = coreCount
     args['primaryLanguage'] = 'en'
     args['customArgsIndex'] = 0
-    
-    connection, username, password = panoptesConnect(username, password)
+    args['F_livePost'] = True
     
     if not makeImages:
         # User has images.
