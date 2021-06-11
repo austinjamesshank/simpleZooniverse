@@ -38,6 +38,6 @@ Use the script below to quickly clone this repo to your Drive:
     g. Wait for the install to complete, stay on the current page, and continue to step 6.
     
 5. Click on "Open with" at the top of the screen, then choose Colaboratory. You will now be viewing the basic notebook for Simple Zooniverse. 
-6. From here, simply follow the steps in the basic notebook to create a Zooniverse project with your images. If you have further questions, please refer to the documentation links at the top of this readme. Further questions should be addressed to ashank@unca.alumni.edu or austinjamesshank@gmail.com.
+6. From here, simply follow the steps in the basic notebook to create a Zooniverse project with your images. If you have further questions, please refer to the documentation links at the top of this readme. Further questions should be addressed to ashank@alumni.unca.edu or austinjamesshank@gmail.com.
 
 Have fun!
