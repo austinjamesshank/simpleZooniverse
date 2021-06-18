@@ -4,7 +4,7 @@ Simplifying the Zooniverse Panoptes API functions for wider public use.
 
 Use the script below to quickly clone this repo to your Drive:
 
-- Cloning script: https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI
+- [Cloning script](https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI)
 
 ---
 
