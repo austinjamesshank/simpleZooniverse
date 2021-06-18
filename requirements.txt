@@ -1,5 +1,0 @@
-astropy
-astroquery
-numpy
-panoptes-client
-simplejson
