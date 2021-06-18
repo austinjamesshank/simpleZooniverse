@@ -10,7 +10,7 @@ Use the script below to quickly clone this repo to your Drive:
 
 # Documentation 
 
-- YouTube tutorial: NEED LINK
+- YouTube tutorial playlist: https://youtube.com/playlist?list=PL6W2skmjHTC4heOIfVFbtEYI-kZi7w5nB
 - Written documentation: NEED LINK
 
 ---
