@@ -2,8 +2,6 @@
 
 Simplifying the Zooniverse Panoptes API functions for wider public use.
 
-**For quick setup information, click [HERE](https://github.com/austinjamesshank/simpleZooniverse/blob/main/README.md#quick-set-up).
-
 Use the script below to quickly clone this repo to your Drive:
 
 - [Cloning script](https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI)
