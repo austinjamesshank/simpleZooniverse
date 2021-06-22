@@ -86,7 +86,9 @@ def panoptesConnect(user, pw):
         pw = getpass.getpass('Password: ')
     
     notConnected = True
-    while notConnected:
+    connectionAttempts = 0
+    failedPasswords = 0
+    while notConnected and connectionAttempts < 10 and failedPasswords < 3:
         notConnected = False
         try:    
             connection = Panoptes.connect(username=user, password=pw)
@@ -97,6 +99,16 @@ def panoptesConnect(user, pw):
                 print('Please re-enter your Zooniverse username and password')  
                 user = input('Username: ')
                 pw = getpass.getpass('Password: ')
+                failedPasswords += 1
+            else:
+                print('!!! {} , Waiting 5 seconds...'.format(e))
+                for i in range(0, 5):
+                    time.sleep(1)
+                connectionAttempts += 1
+    if failedPasswords == 3:
+        sys.exit('TOO MANY INCORRECT LOGINS!\nPlease confirm your Zooniverse username and password on the site, then try again.')
+    if connectionAttempts == 10:
+        sys.exit('CONNECTION FAILED!\nPlease check your internet connection and Zooniverse\'s status, then try again.')
                     
     return connection, user, pw
 
