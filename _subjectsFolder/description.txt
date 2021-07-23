@@ -1,0 +1,1 @@
+This folder is intended to house your subject images. Simply place the folder containing your images (and manifest if you have one) in this folder.
