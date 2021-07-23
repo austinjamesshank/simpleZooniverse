@@ -6,7 +6,7 @@ For those using Google Colab, use the script below to quickly clone this repo to
 
 - [Cloning script](https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI)
 
-For those using SciServer, modify the command below to include your username in place of {user} and run it in a new terminal in SciServer.
+For those using SciServer, modify the command below to include your username in place of {user} and run it in a new terminal in SciServer to clone this repository to your SciServer drive.
 
     git clone https://github.com/austinjamesshank/simpleZooniverse.git /home/idies/workspace/Storage/{user}/persistent/
 
