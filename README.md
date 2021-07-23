@@ -12,6 +12,15 @@ For those using SciServer, modify the command below to include your username in 
 
 ---
 
+---
+
+# Contact Information
+
+The best way to reach us with questions is via email to any of the following (in order of relevance):
+
+- austinjamesshank@gmail.com
+- ashank@alumni.unca.edu
+
 # Documentation 
 
 - [YouTube tutorial playlist](https://youtube.com/playlist?list=PL6W2skmjHTC4heOIfVFbtEYI-kZi7w5nB)
@@ -42,6 +51,6 @@ For those using SciServer, modify the command below to include your username in 
     g. Wait for the install to complete, stay on the current page, and continue to step 6.
     
 5. Click on "Open with" at the top of the screen, then choose Colaboratory. You will now be viewing the basic notebook for Simple Zooniverse. 
-6. From here, simply follow the steps in the basic notebook to create a Zooniverse project with your images. If you have further questions, please refer to the documentation links at the top of this readme. Further questions should be addressed to ashank@alumni.unca.edu or austinjamesshank@gmail.com.
+6. From here, simply follow the steps in the basic notebook to create a Zooniverse project with your images. If you have further questions, please refer to the documentation links at the top of this readme.
 
 Have fun!
