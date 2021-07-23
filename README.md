@@ -19,6 +19,7 @@ For those using SciServer, modify the command below to include your username in 
 The best way to reach us with questions is via email to any of the following (in order of relevance):
 
 - austinjamesshank@gmail.com
+- blundgre@unca.edu
 - ashank@alumni.unca.edu
 
 # Documentation 
@@ -28,7 +29,7 @@ The best way to reach us with questions is via email to any of the following (in
 
 ---
 
-# Quick setup
+# Setup for Google Colab
 
 **To use this repo with Google Colab, follow the steps below:**
 1. Go to this link: https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI
@@ -52,5 +53,17 @@ The best way to reach us with questions is via email to any of the following (in
     
 5. Click on "Open with" at the top of the screen, then choose Colaboratory. You will now be viewing the basic notebook for Simple Zooniverse. 
 6. From here, simply follow the steps in the basic notebook to create a Zooniverse project with your images. If you have further questions, please refer to the documentation links at the top of this readme.
+
+---
+
+# Setup for SciServer
+
+**To use this repo with SciServer, follow the steps below:**
+
+These Jupyter notebooks are designed to be run from the SciServer Compute environment (http://www.sciserver.org/tools/compute/). SciServer provides a web-based platform for interacting with the vast database of astronomical imaging and spectroscopy from the Sloan Digital Sky Survey (SDSS; York et al. 2000). All of the computing is done in the cloud, so there's no need to download anything to a local computer. The only thing required to get started exploring the universe is a web browser!
+
+If you set up a SciServer account and upload these notebooks into a new “container”, they should compile without error. There are two versions of each of the python notebooks in this repository. One has all of the output cleared, and one is fully compiled with worked solutions for each provided prompt.
+
+Questions or comments? Please contact Britt Lundgren:
 
 Have fun!
