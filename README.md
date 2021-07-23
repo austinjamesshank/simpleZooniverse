@@ -2,9 +2,13 @@
 
 Simplifying the Zooniverse Panoptes API functions for wider public use.
 
-Use the script below to quickly clone this repo to your Drive:
+For those using Google Colab, use the script below to quickly clone this repo to your Drive:
 
 - [Cloning script](https://colab.research.google.com/drive/18lzHK9njUxmhF9xt5jITV87mxpSDFATi#scrollTo=AItpzHuHRfmI)
+
+For those using SciServer, modify the command below to include your username in place of {user} and run it in a new terminal in SciServer.
+
+git clone https://github.com/austinjamesshank/simpleZooniverse.git /home/idies/workspace/Storage/{user}/persistent/
 
 ---
 
