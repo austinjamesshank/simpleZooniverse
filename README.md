@@ -67,7 +67,7 @@ If you set up a SciServer account and upload these notebooks into a new “conta
 1. Open your preferred SciServer container.
 2. Click "switch to JupyterLab"
 3. Click on "terminal" in the other section to open a new terminal.
-4. Enter the following command (BE SURE TO CHANGE THE {user} IN THE COMMAND TO YOUR SCISERVER USERNAME: 
+4. Enter the following command -- BE SURE TO CHANGE THE {user} IN THE COMMAND TO YOUR SCISERVER USERNAME: 
     
         git clone https://github.com/austinjamesshank/simpleZooniverse.git /home/idies/workspace/Storage/{user}/persistent/simpleZooniverse
     
