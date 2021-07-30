@@ -64,6 +64,12 @@ These Jupyter notebooks are designed to be run from the SciServer Compute enviro
 
 If you set up a SciServer account and upload these notebooks into a new “container”, they should compile without error. There are two versions of each of the python notebooks in this repository. One has all of the output cleared, and one is fully compiled with worked solutions for each provided prompt.
 
+1. Open your preferred SciServer container.
+2. Click "switch to JupyterLab"
+3. Click on "terminal" in the other section to open a new terminal.
+4. Enter the following command (BE SURE TO CHANGE THE {user} IN THE COMMAND TO YOUR SCISERVER USERNAME: git clone https://github.com/austinjamesshank/simpleZooniverse.git /home/idies/workspace/Storage/{user}/persistent/simpleZooniverse
+5. The repository will now be cloned into your persistent storage folder in SciServer. Navigate to this folder and open the SciServer jupyter notebooks to begin creating a project.
+
 Questions or comments? Please contact Britt Lundgren:
 
 Have fun!
