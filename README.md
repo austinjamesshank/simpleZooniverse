@@ -18,6 +18,7 @@ For those using SciServer, modify the command below to include your username in 
 
 The best way to reach us with questions is via email to any of the following (in order of relevance):
 
+- ashank@unca.edu
 - austinjamesshank@gmail.com
 - blundgre@unca.edu
 - ashank@alumni.unca.edu
