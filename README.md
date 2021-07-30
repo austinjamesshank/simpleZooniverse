@@ -73,6 +73,6 @@ If you set up a SciServer account and upload these notebooks into a new “conta
     
 5. The repository will now be cloned into your persistent storage folder in SciServer. Navigate to this folder and open the SciServer jupyter notebooks to begin creating a project.
 
-Questions or comments? Please contact Britt Lundgren:
+---
 
 Have fun!
