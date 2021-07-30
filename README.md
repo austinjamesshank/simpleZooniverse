@@ -12,8 +12,6 @@ For those using SciServer, modify the command below to include your username in 
 
 ---
 
----
-
 # Contact Information
 
 The best way to reach us with questions is via email to any of the following:
